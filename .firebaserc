@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "spincrowapp",
-    "staging": "spincrow-dev"
+    "default": "sugarservice-a3b90"
   }
 }

@@ -1,5 +1,4 @@
 import React, { useState} from "react"
-import Sidebar from "../../components/sidebar"
 import { useMutation } from '@apollo/react-hooks';
 import {Link} from "react-router-dom"
 import cookies from "js-cookie"

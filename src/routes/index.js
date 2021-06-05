@@ -4,16 +4,13 @@ import {Route, Redirect, useHistory, Switch} from 'react-router-dom';
 import {
 	UploadApartment, 
 	Apartments,
-	SingleApartment
 } from "../pages"
-import Header from "../components/header"
 
 import { onError } from "apollo-link-error";
-import { ToastProvider, useToasts } from 'react-toast-notifications'
+import {  useToasts } from 'react-toast-notifications'
 import { ApolloClient } from 'apollo-client';
-import {InMemoryCache, ObjectCache} from "apollo-boost";
+import {InMemoryCache} from "apollo-boost";
 import { ApolloProvider} from '@apollo/react-hooks';
-import { HttpLink} from 'apollo-link-http'
 import {ApolloLink , concat} from "apollo-link"
 import cookies from "js-cookie"
 import {createUploadLink} from "apollo-upload-client"
@@ -90,7 +87,6 @@ const Routes = () => {
 				<Switch>
 					<Route  path="/" exact component={Apartments} />
 					<Route  path="/upload" exact component={UploadApartment} />
-					<Route  path="/id" exact component={SingleApartment} />
 				</Switch>
 			</ApolloProvider>
 		</React.Fragment>

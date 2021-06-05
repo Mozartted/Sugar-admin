@@ -1,9 +1,7 @@
 import React, { useState} from "react"
-import Sidebar from "../../components/sidebar"
 import { useMutation, useQuery} from '@apollo/react-hooks';
 import {Link} from "react-router-dom"
 import {APARTMENTS} from "../../utils/queries"
-import cookies from "js-cookie"
 
 const Layout = (props) => {
 
@@ -33,60 +31,12 @@ const Layout = (props) => {
             ]
         }
     )
-    // const [signupUser, { data, loading }, ] = useMutation(props.signupMutations);
 
     const {data, loading} = useQuery(APARTMENTS, {
         onCompleted: (response) => {
             console.log(response)
         }
     })
-
-
-   const signup = async () => {
-        const { setRedirectUrl, toastManager, history} = props
-        setRedirectUrl('emailconfirmation')
-        try {
-            // let resp = await signupUser({ variables: { ...state.params } });
-            // if(resp){
-            //     const {error, data} = resp
-                
-            //     if(error){
-            //         toastManager.add("Something went wrong", {
-            //             appearance: 'error',
-            //             autoDismiss: true,
-            //         })
-            //     }else{
-            //         if(resp.data.signup.token){
-            //             cookies.set('uat', resp.data.signup.token)
-            //         }
-            //         await props.login({user: resp.data.signup.user})
-            //         toastManager.add("Successfully sign in", {
-            //             appearance: 'success',
-            //             autoDismiss: true,
-            //         })
-                    
-            //         if(props.redirectUrl){
-            //             history.push(props.redirectUrl)
-            //         }else{
-            //             history.push("emailconfirmation")
-            //         }
-            //     }
-            // }
-        }catch(err){
-            
-        }
-    }
-
-    const onChange = (e) => {
-        let target = e.target
-        updateState({
-            ...state,
-            params: {
-                ...state.params,
-                [target.name] : target.value
-            }
-        })
-    }
 
     return(
         <div className="container">
