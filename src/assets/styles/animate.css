@@ -1,0 +1,44 @@
+
+
+.spinanimate-enter {
+    opacity: 0.01;
+}
+
+.spinanimate-enter.spinanimate-enter-active {
+    opacity: 0.5;
+    transition: opacity 1000ms ease-in;
+}
+
+.spinanimate-enter-done{
+    opacity: 1;
+}
+
+
+
+.spinanimate-exit {
+    opacity: 1;
+}
+
+.spinanimate-exit-done {
+    opacity: 0.5;
+}
+
+.spinanimate-exit.spinanimate-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.c {
+    position: absolute;
+    /* max-width: 500px;
+    max-height: 500px; */
+    width: 98%;
+    height: 98%;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+  
+  .front,
+  .back {
+    background-size: cover;
+  }

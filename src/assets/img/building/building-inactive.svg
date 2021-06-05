@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.75" height="22.75" viewBox="0 0 32.75 22.75">
+  <g id="building" transform="translate(-915.25 -318.25)">
+    <g id="building-2" data-name="building" transform="translate(918 321)">
+      <line id="Line_17" data-name="Line 17" x1="30" transform="translate(0 20)" fill="none"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M15,0,30,7.5H0Z" fill="#9c9da8"/>
+      <path id="Path_2451" data-name="Path 2451" d="M11346,11439v7.5" transform="translate(-11341 -11429)" fill="#9c9da8"/>
+      <path id="Path_2452" data-name="Path 2452" d="M11350,11439v7.5" transform="translate(-11340 -11429)" fill="#9c9da8"/>
+      <path id="Path_2453" data-name="Path 2453" d="M11354,11439v7.5" transform="translate(-11339 -11429)" fill="#9c9da8"/>
+      <path id="Path_2454" data-name="Path 2454" d="M11358,11439v7.5" transform="translate(-11338 -11429)" fill="#9c9da8"/>
+      <path id="Path_2455" data-name="Path 2455" d="M11362,11439v7.5" transform="translate(-11337 -11429)" fill="#9c9da8"/>
+    </g>
+    <g id="building-3" data-name="building" transform="translate(916 319)">
+      <line id="Line_17-2" data-name="Line 17" x1="30" transform="translate(0 20)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Polygon_1-2" data-name="Polygon 1" d="M15,0,30,7.5H0Z" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_2451-2" data-name="Path 2451" d="M11346,11439v7.5" transform="translate(-11341 -11429)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_2452-2" data-name="Path 2452" d="M11350,11439v7.5" transform="translate(-11340 -11429)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_2453-2" data-name="Path 2453" d="M11354,11439v7.5" transform="translate(-11339 -11429)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_2454-2" data-name="Path 2454" d="M11358,11439v7.5" transform="translate(-11338 -11429)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path_2455-2" data-name="Path 2455" d="M11362,11439v7.5" transform="translate(-11337 -11429)" fill="none" stroke="#6f7089" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

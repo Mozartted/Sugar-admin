@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "spincrowapp",
+    "staging": "spincrow-dev"
+  }
+}

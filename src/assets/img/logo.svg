@@ -1,0 +1,18 @@
+<svg id="Component_14_1" data-name="Component 14 – 1" xmlns="http://www.w3.org/2000/svg" width="151" height="40" viewBox="0 0 151 40">
+  <g id="Group">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.928" cy="4.928" r="4.928" transform="translate(15.362 15.072)" fill="#2329d6"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="4.058" cy="4.058" r="4.058" transform="translate(25.797 15.942)" fill="#2329d6"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="4.058" cy="4.058" r="4.058" transform="translate(6.087 15.942)" fill="#2329d6"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="2.609" cy="2.609" r="2.609" transform="translate(8.986 26.087)" fill="#2329d6"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="2.319" cy="2.319" r="2.319" transform="translate(17.971 35.362)" fill="#2329d6"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="2.319" cy="2.319" r="2.319" transform="translate(17.971 0)" fill="#2329d6"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="2.319" cy="2.319" r="2.319" transform="translate(0 17.681)" fill="#2329d6"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.319" cy="2.319" r="2.319" transform="translate(35.362 17.681)" fill="#2329d6"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.609" cy="2.609" r="2.609" transform="translate(25.797 26.087)" fill="#2329d6"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="2.609" cy="2.609" r="2.609" transform="translate(25.797 8.696)" fill="#2329d6"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="2.609" cy="2.609" r="2.609" transform="translate(8.986 8.696)" fill="#2329d6"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="4.058" cy="4.058" r="4.058" transform="translate(16.232 26.087)" fill="#2329d6"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="4.058" cy="4.058" r="4.058" transform="translate(16.232 5.797)" fill="#2329d6"/>
+  </g>
+  <text id="Spincrow" transform="translate(50 30)" fill="#2329d6" font-size="24" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">Spincrow</tspan></text>
+</svg>

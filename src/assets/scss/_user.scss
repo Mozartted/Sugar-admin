@@ -1,0 +1,159 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+@import "./assets/fonts/feather/feather.css";
+
+// COLORS
+$gray-700: #6f7089 !important;
+$card-border-radius: 4px !important;
+
+// Types 
+.bg-pink{
+    background-color: $pink-alternative;
+}
+
+.bg-light{
+    background-color: rgba(164,167,204, 0.1) !important;
+}
+
+.bg-body-alt{
+    background-color: #fff;
+}
+
+svg{
+  margin-bottom: 5px;
+}
+
+// TEXT COLORS
+.text-inactive{
+    color: rgb(156,157,168) !important;
+}
+
+
+.zoom {
+    transition: transform .25s; /* Animation */
+}
+  
+.zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.margin-center{
+    margin: 0 auto;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+// Form pointer changes
+.react-tel-input {
+
+    > .form-control {
+      border-radius: $input-border-radius;
+  
+      &:focus {
+        box-shadow: none;
+        
+        ~ [class*="input-group"] {
+          
+          > .input-group-text {
+            border-color: $input-focus-border-color;
+          }
+        }
+      }
+    }
+  
+    > .form-control.is-valid ~ [class*="input-group"] > .input-group-text {
+      border-color: $success;
+    }
+  
+    > .form-control.is-invalid ~ [class*="input-group"] > .input-group-text {
+      border-color: $danger;
+    }
+  
+    > .form-control-prepended {
+      padding-left: $input-padding-x / 2;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border-left-width: 0;
+    }
+  
+    > .form-control-appended {
+      padding-right: $input-padding-x / 2;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-right-width: 0;
+    }
+  
+    > .input-group-prepend {
+      order: -1; // prepend always goes first
+  
+      > .input-group-text {
+        padding-right: $input-padding-x / 2;
+        border-top-left-radius: $input-border-radius;
+        border-bottom-left-radius: $input-border-radius;
+        border-right-width: 0;
+        transition: $input-transition;
+      }
+    }
+  
+    > .input-group-append {
+  
+      > .input-group-text {
+        padding-left: $input-padding-x / 2;
+        border-top-right-radius: $input-border-radius;
+        border-bottom-right-radius: $input-border-radius;
+        border-left-width: 0;
+        transition: $input-transition;
+      }
+    }
+}
+
+input:disabled {
+  color:#717171;
+  border-color: #9e9e9e;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}   
+
+.navbar-brand{
+  display: block;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-brand-img {
+  max-height: 3rem;
+}
+
+.navbar-mobile-view{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  // margin-left: -1.5rem;
+  // margin-right: -1.5rem;
+  // padding-left: 1.5rem;
+  // padding-right: 1.5rem;
+}
+
+.navbar-mobile-view.navbar-nav {
+    flex-direction: column;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}

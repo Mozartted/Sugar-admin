@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.75" height="22.75" viewBox="0 0 32.75 22.75">
+  <g id="credit-card" transform="translate(0.75 0.75)">
+    <line id="Line_16" data-name="Line 16" x2="30" transform="translate(0 6.249)" fill="none" stroke="#2329d6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4384" data-name="Path 4384" d="M0,0H30V20H0Z" fill="none" stroke="#2329d6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4391" data-name="Path 4391" d="M0,0H30V20H0Z" transform="translate(2 2)" fill="#ffcca6"/>
+  </g>
+</svg>
