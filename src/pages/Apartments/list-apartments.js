@@ -2,41 +2,33 @@ import React, { useState} from "react"
 import { useMutation, useQuery} from '@apollo/react-hooks';
 import {Link} from "react-router-dom"
 import {APARTMENTS} from "../../utils/queries"
+import { Apartments } from "pages";
 
 const Layout = (props) => {
 
     const [state, updateState ] = useState({
-            agencies: [],
-            passwordVisible: false,
-            params: {},
-            loading: false,
-            links: [
-                // {
-                //     anchor: "/signup",
-                //     name: "Enter personal information",
-                //     active: true
-                // },
-                // {
-                //     anchor: "/emailconfirmation",
-                //     name: "Verify email"
-                // },
-                // {
-                //     anchor: "/addphone",
-                //     name: "Add phone number"
-                // },
-                // {
-                //     anchor: "/phoneconfirmation",
-                //     name: "Verify phone number"
-                // },
-            ]
+            currentlySelected: null,
+            apartments: []
         }
     )
 
+    
     const {data, loading} = useQuery(APARTMENTS, {
         onCompleted: (response) => {
             console.log(response)
+            updateState({
+                ...state,
+                apartments: response.apartments
+            })
         }
     })
+
+    const setSelected = (index) => {
+        updateState({
+            ...state,
+            currentlySelected: state.apartments[index]
+        })
+    }
 
     return(
         <div className="container">
@@ -84,7 +76,7 @@ const Layout = (props) => {
                             <>
                                 {
                                     data.apartments.map((apartment, index) => {
-                                        return <tr key={index}>
+                                        return <tr key={index} onClick={() => setSelected(index)}>
                                             <td>{apartment.name}</td>
                                             <td>{apartment.doors.length}</td>
                                             <td>{apartment.users.length}</td>
@@ -101,6 +93,86 @@ const Layout = (props) => {
                 </table>
                 </div>
             </div>
+            {
+                state.currentlySelected ?
+                <div className="row">
+                    <div className="col-md-6 col-12">
+                        <div className="row">
+                            <div className="col">
+                                <h3>Doors</h3>
+                            </div>
+                        </div>
+                        <div className="table-responsive">
+                            <table className="table table-sm table-nowrap">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Door</th>
+                                    <th scope="col">Acme</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        !loading ? 
+                                        <>
+                                            {
+                                                state.currentlySelected.doors.map((door, index) => {
+                                                    return <tr key={index}>
+                                                        <td>{door.name}</td>
+                                                        <td>{door.acme_id}</td>
+                                                    </tr>
+                                                })
+
+                                            }
+                                        </>: 
+                                        <div className="spinner-border" role="status">
+                                            <span className="visually-hidden">Loading...</span>
+                                        </div>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-12">
+                        <div className="row">
+                            <div className="col">
+                                <h3>Residents</h3>
+                            </div>
+                        </div>
+                        <div className="table-responsive">
+                            <table className="table table-sm table-nowrap">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Firstname</th>
+                                    <th scope="col">email</th>
+                                    <th scope="col">Doors</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        !loading ? 
+                                        <>
+                                            {
+                                                state.currentlySelected.users.map((user, index) => {
+                                                    return <tr key={index}>
+                                                        <td>{user.first_name}</td>
+                                                        <td>{user.email}</td>
+                                                        <td>{user.doors.map(door => door.name).toString()}</td>
+                                                    </tr>
+                                                })
+
+                                            }
+                                        </>: 
+                                        <div className="spinner-border" role="status">
+                                            <span className="visually-hidden">Loading...</span>
+                                        </div>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                : null
+            }
         </div>
     )
 }

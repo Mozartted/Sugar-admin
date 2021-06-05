@@ -22,13 +22,17 @@ export const APARTMENTS = gql`
             name
             doors {
             name
+            acme_id
             id
             }
             users {
-            id
-            first_name
-            last_name
-                    email
+                id
+                first_name
+                last_name
+                email
+                doors {
+                    name
+                }
             }
         }
     }
